@@ -1,6 +1,14 @@
 def enumerate_list(list):
-    return list
+    x=[]
+    for i in list:
+        if i != "":
+            x+=  [f"{len (x)}. {i}"]
+    return x
 
 
 def enumerate_backwards(list):
-    return list
+    x=[]
+    for i in list:
+        if i != "":
+            x+=  [f"{len (x)}. {i[::-1]}"]  
+    return x
